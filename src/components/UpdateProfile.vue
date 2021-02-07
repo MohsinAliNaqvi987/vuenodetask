@@ -8,10 +8,6 @@
       <strong>{{this.alertMessage }}</strong>
     </div>
     <div class="d-flex justify-content-between my-2">
-      <label>Email</label>
-      <input type="text" v-model="email" />
-    </div>
-    <div class="d-flex justify-content-between my-2">
       <label>Enter New Name</label>
       <input type="text" v-model="newName" />
     </div>
@@ -34,10 +30,11 @@
 
 <script>
 export default {
-name: "UpdatePassword",
+  name: "UpdatePassword",
+  props:['email'],
   data(){
     return {
-      email:'',alertDisplaySuccess:false,alertDisplayDanger:false,alertMessage:'',newName:'',image:null,dob:null,education:''
+      alertDisplaySuccess:false,alertDisplayDanger:false,alertMessage:'',newName:'',image:null,dob:null,education:''
     }
   },
   methods:{
@@ -59,12 +56,7 @@ name: "UpdatePassword",
       formData.append("education", this.education);
       this.$axios.post("http://localhost:3001/vueapp/updateProfile", formData, config)
         .then(res => {
-          this.alertDisplaySuccess=true;
-          this.alertMessage=res.data.message;
-          setTimeout(()=>{
-            this.alertDisplaySuccess=false;
-            this.alertMessage="";
-          }, 3000);
+            this.$emit('sendUpdatedUserBack', {user: res.data.data, message:"Updated Profile Successfully", showUpdateForm: false});
         })
         .catch(err => {
           this.alertDisplayDanger=true;

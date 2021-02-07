@@ -13,6 +13,16 @@
     <list default="true" id="bfc9bf59-ece8-4e5d-9b95-31503492e528" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/verification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ForgetPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ForgetPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UpdatePassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UpdateProfile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -37,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../XAMPP/htdocs/vuetask" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -66,7 +77,13 @@
       <workItem from="1612101599734" duration="6194000" />
       <workItem from="1612116335437" duration="3565000" />
       <workItem from="1612162536879" duration="2557000" />
-      <workItem from="1612191455360" duration="8355000" />
+      <workItem from="1612191455360" duration="9785000" />
+      <workItem from="1612339215030" duration="25734000" />
+      <workItem from="1612427805867" duration="3590000" />
+      <workItem from="1612449169420" duration="4330000" />
+      <workItem from="1612519663838" duration="29350000" />
+      <workItem from="1612598857937" duration="5572000" />
+      <workItem from="1612680367107" duration="5186000" />
     </task>
     <servers />
   </component>
@@ -86,17 +103,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" width="436" height="491" key="FileChooserDialogImpl" timestamp="1612117917577">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612351788556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" width="436" height="491" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612117917577" />
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1612351788556" />
+    <state x="463" y="118" width="436" height="491" key="FileChooserDialogImpl" timestamp="1612683703362">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" width="436" height="491" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612683703362" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1611741831332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611741831332" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611739275081">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1612520545322">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611739275081" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1612520545322" />
   </component>
 </project>

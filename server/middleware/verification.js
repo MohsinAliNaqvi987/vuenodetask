@@ -17,9 +17,9 @@ module.exports={
     email:function(req, res, next) {
         var email = req.body.email;
         if (email.substr(email.length-4) === '.com' && email.length>=6 && email.length<=50) {
-          db.getUsersByEmail(email)
+          db.getUserByEmail(email)
             .then((doc) => {
-              if(doc.length !== 0){
+              if(doc){
                 res.status(400).json({ error: "Email already used"});
               }
               else{
@@ -34,12 +34,30 @@ module.exports={
         }
     },
 
+    loginEmail:function(req, res, next) {
+      var email = req.body.email;
+      if (email.substr(email.length-4) === '.com' && email.length>=6 && email.length<=50) {
+        next();
+      }else {
+        res.status(400).json({ error: "Provide correct email" });
+      }
+    },
+
+    loginPassword:function(req, res, next) {
+      var password = req.body.password;
+      if (password.length>=8) {
+        next();
+      } else {
+        res.status(400).json({ error: "Enter complete password" });
+      }
+    },
+
     forgetEmail:function(req, res, next) {
       var email = req.body.email;
       if (email.substr(email.length-4) === '.com' && email.length>=6 && email.length<=50) {
-        db.getUsersByEmail(email)
+        db.getUserByEmail(email)
           .then((doc) => {
-            if(doc.length === 0){
+            if(!doc){
               res.status(400).json({ error: "No user with this email"});
             }
             else{
@@ -57,9 +75,9 @@ module.exports={
     updateEmail:function(req, res, next) {
       var email = req.body.email;
       if (email.substr(email.length-4) === '.com' && email.length>=6 && email.length<=50) {
-        db.getUsersByEmail(email)
+        db.getUserByEmail(email)
           .then((doc) => {
-            if(doc.length === 0){
+            if(!doc){
               unlinkAsync(req.file.path);
               res.status(400).json({ error: "No user with this email"});
             }
@@ -111,17 +129,6 @@ module.exports={
                 console.log(err);
                 res.status(400).json({ error:err });
             });
-    },
-
-    changePassword:function(req, res, next) {
-      db.changePassword({email:req.body.email, password:req.body.newPassword})
-        .then(()=>{
-          next();
-        })
-        .catch(err => {
-          console.log(err);
-          res.status(400).json({ error:err });
-        });
     },
 
     updateProfile:function(req, res, next) {
