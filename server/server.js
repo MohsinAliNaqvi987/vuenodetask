@@ -5,6 +5,9 @@ app.use(cors());
 const router = require('./routes/router');
 const mongoose = require('mongoose');
 const db = require("./db/db");
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 mongoose.connect('mongodb://localhost:27017/vueTask',{ useNewUrlParser: true , useUnifiedTopology: true})
 

@@ -12,17 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bfc9bf59-ece8-4e5d-9b95-31503492e528" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/verification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ForgetPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ForgetPassword.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UpdatePassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UpdateProfile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +74,7 @@
       <workItem from="1612519663838" duration="29350000" />
       <workItem from="1612598857937" duration="5572000" />
       <workItem from="1612680367107" duration="5186000" />
+      <workItem from="1612694050130" duration="4678000" />
     </task>
     <servers />
   </component>
